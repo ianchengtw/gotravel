@@ -1,0 +1,40 @@
+<gt-navbar></gt-navbar>
+
+<div id="page-wrapper" ng-controller="AddTripCtrl as atCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">New Trip
+              <button type="button" class="btn btn-primary btn-lg pull-right" ng-click="atCtrl.save()">Save</button>
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+		<div class="form-group col-lg-12">
+			<label>Subject</label>
+			<input class="form-control" placeholder="Enter Subject" ng-model="subject">
+		</div>
+    </div>
+    <div class="row">
+		<div class="form-group col-lg-12">
+			<label>Location</label>
+			<input class="form-control" placeholder="Enter Location" ng-model="location">
+		</div>
+    </div>
+    <div class="row">
+		<div class="form-group col-lg-12">
+			<label>Goal</label>
+			<input class="form-control" placeholder="Enter Goal" ng-model="goal">
+		</div>
+    </div>
+	<div class="row">
+		<div class="form-group col-lg-12">
+			<label>Description</label>
+			<textarea class="form-control" rows="3"  placeholder="Enter Description" ng-model="desc"></textarea>
+		</div>
+	</div>
+
+    </div>
+    
+</div>
+<!-- /#page-wrapper -->

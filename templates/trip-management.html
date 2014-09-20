@@ -1,0 +1,18 @@
+<div id="page-wrapper" ng-controller="PersonalPageCtrl as ppCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Trip Lists
+              <button type="button" class="btn btn-primary btn-lg pull-right" click-link="/add-trip">Add Trip</button>
+            </h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+    <div class="row">
+        <div ng-repeat="trip in ppCtrl.Trips | filter:keySearch">
+            <gt-single-trip></gt-single-trip>
+        </div>
+    </div>
+    
+</div>
+<!-- /#page-wrapper -->

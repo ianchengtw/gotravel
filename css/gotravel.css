@@ -1,0 +1,7 @@
+.cursor-pointer {
+	cursor: pointer;
+}
+.col-centered {
+    width: 100%;
+    margin: auto;
+}
