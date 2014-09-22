@@ -7,13 +7,13 @@ var gotravelControllers = angular.module('gotravelControllers', []);
 gotravelControllers.controller('PersonalPageCtrl', ['$scope', 'Trips', 
   function($scope, Trips) {
 
-    // $scope.search = this.search;
-    // this.Trips = Trips;
     this.Trips = [];
     for(var idx in Trips){
       var trip = Trips[idx];
       this.Trips.push(trip);
     }
+
+    $scope.photos = this.Trips;
 
   }]);
 

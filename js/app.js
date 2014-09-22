@@ -7,7 +7,8 @@ var app = angular.module('gotravelApp', [
   'ngRoute',
   'gotravelControllers',
   'gotravelServices',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'akoenig.deckgrid'
 ]);
 
 app.config(['$routeProvider',
